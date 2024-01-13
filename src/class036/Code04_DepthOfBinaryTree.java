@@ -11,6 +11,10 @@ public class Code04_DepthOfBinaryTree {
 	}
 
 	// 测试链接 : https://leetcode.cn/problems/maximum-depth-of-binary-tree/
+	/*
+	* 日期：2024年01月13日
+	* 备注：开始使用递归解决问题了
+	* */
 	public static int maxDepth(TreeNode root) {
 		return root == null ? 0 : Math.max(maxDepth(root.left), maxDepth(root.right)) + 1;
 	}

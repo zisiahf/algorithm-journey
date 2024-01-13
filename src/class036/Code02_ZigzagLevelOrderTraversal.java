@@ -1,6 +1,7 @@
 package class036;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 // 二叉树的锯齿形层序遍历
@@ -25,6 +26,8 @@ public class Code02_ZigzagLevelOrderTraversal {
 
 	public static List<List<Integer>> zigzagLevelOrder(TreeNode root) {
 		List<List<Integer>> ans = new ArrayList<>();
+
+
 		if (root != null) {
 			l = r = 0;
 			queue[r++] = root;
