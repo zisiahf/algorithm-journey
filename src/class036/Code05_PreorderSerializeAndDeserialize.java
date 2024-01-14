@@ -34,6 +34,8 @@ public class Code05_PreorderSerializeAndDeserialize {
 			StringBuilder builder = new StringBuilder();
 			f(root, builder);
 			return builder.toString();
+
+
 		}
 
 		void f(TreeNode root, StringBuilder builder) {

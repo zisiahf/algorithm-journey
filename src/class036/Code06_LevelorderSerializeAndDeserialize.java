@@ -65,6 +65,8 @@ public class Code06_LevelorderSerializeAndDeserialize {
 				TreeNode cur = queue[l++];
 				cur.left = generate(nodes[index++]);
 				cur.right = generate(nodes[index++]);
+
+				// 保存节点之间的关系
 				if (cur.left != null) {
 					queue[r++] = cur.left;
 				}
